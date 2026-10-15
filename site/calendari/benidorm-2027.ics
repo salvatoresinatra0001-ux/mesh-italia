@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MESH Archivio indipendente//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:benidorm-2027@mesh-archivio-v11.salvatore-sinatra-9.chatgpt.site
+DTSTAMP:20261015T002622Z
+DTSTART;VALUE=DATE:20270612
+DTEND;VALUE=DATE:20270613
+SUMMARY:MESH · Benidorm
+LOCATION:Discoteca Penelope\, Benidorm\, Spagna
+DESCRIPTION:Dark City Fest 2027. Data senza orario: controllare organizza
+ tore e calendario ufficiale. Fonte: https://www.mesh.co.uk/live. Verific
+ ato il 15 ottobre 2026.
+URL:https://www.mesh.co.uk/live
+END:VEVENT
+END:VCALENDAR

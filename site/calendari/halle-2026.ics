@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MESH Archivio indipendente//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:halle-2026@mesh-archivio-v11.salvatore-sinatra-9.chatgpt.site
+DTSTAMP:20261015T002622Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:MESH · Halle (Saale)
+LOCATION:Capitol Halle\, Halle (Saale)\, Germania
+DESCRIPTION:The Truth Doesn't Matter Tour 2026. Data senza orario: contro
+ llare organizzatore e calendario ufficiale. Fonte: https://www.mesh.co.u
+ k/live. Verificato il 15 ottobre 2026.
+URL:https://www.mesh.co.uk/live
+END:VEVENT
+END:VCALENDAR

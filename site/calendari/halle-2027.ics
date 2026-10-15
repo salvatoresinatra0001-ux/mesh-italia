@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MESH Archivio indipendente//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:halle-2027@mesh-archivio-v11.salvatore-sinatra-9.chatgpt.site
+DTSTAMP:20261015T002622Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:MESH · Halle (Saale)
+LOCATION:Karlsbad · Angersdorfer Teiche\, Halle (Saale)\, Germania
+DESCRIPTION:Eastside Festival 2027. Data senza orario: controllare organi
+ zzatore e calendario ufficiale. Fonte: https://www.mesh.co.uk/live. Veri
+ ficato il 15 ottobre 2026.
+URL:https://www.mesh.co.uk/live
+END:VEVENT
+END:VCALENDAR
