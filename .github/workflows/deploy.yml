@@ -17,14 +17,29 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Upload website
-        uses: actions/upload-pages-artifact@v4
+      - uses: actions/checkout@v5
+      - name: Prepare website
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          if [ -f site/index.html ]; then
+            cp -a site/. _site/
+          else
+            shopt -s nullglob
+            zips=(*-PAGES-READY.zip)
+            if [ "${#zips[@]}" -ne 1 ]; then
+              echo "::error::Upload site/ or one *-PAGES-READY.zip"; exit 1
+            fi
+            unzip -q "${zips[0]}" 'site/*' -d _extract
+            test -f _extract/site/index.html
+            cp -a _extract/site/. _site/
+          fi
+          touch _site/.nojekyll
+          test -f _site/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
         with:
-          path: ./site
-      - name: Deploy
-        id: deployment
+          path: ./_site
+      - id: deployment
         uses: actions/deploy-pages@v4
