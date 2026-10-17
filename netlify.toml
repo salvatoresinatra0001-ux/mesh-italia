@@ -1,6 +1,7 @@
-# Netlify — sito definitivo, allineato al contenuto GitHub Pages
+# SOLO BRANCH preview/staging — Netlify Preview separata da production
 [build]
-  publish = "site"
+  command = "bash preview/build.sh"
+  publish = "_preview"
 
 [build.environment]
   NODE_VERSION = "22"
@@ -8,12 +9,8 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
