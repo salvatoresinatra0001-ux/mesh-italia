@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://salvatoresinatra0001-ux.github.io/mesh-italia/sitemap.xml
