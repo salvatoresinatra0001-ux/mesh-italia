@@ -1,2 +1,3 @@
-# Compatibilità con vecchi percorsi GitHub Pages
+# Legacy routes
+/musica/fallen-angel/ /v2/musica/fallen-angel/ 301
 /mesh-italia/* /:splat 301
