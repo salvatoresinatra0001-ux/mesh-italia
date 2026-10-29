@@ -1,0 +1,2 @@
+# Keep legacy GitHub Pages paths functional on the root-hosted custom domain.
+/mesh-italia/*  /:splat  301
